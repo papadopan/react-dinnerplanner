@@ -1,0 +1,107 @@
+.dish_view_container{
+  display: flex;
+  min-height: 90vh;
+  flex-flow: row;
+}
+.dish_view_sidebar{
+  order: 1;
+  flex: 2;
+  min-height: 90vh;
+  background: #8267a5;
+  position: relative;
+}
+.details{
+  order: 2;
+  min-height: 90vh;
+  flex: 8;
+  display: flex;
+  flex-flow:row;
+}
+.dish_details{
+  order: 1;
+  flex: 1;
+  min-height: 90vh;
+  background: #2a1b3d;
+  overflow-y: scroll;
+  color :#a4b3b6;
+}
+.dish_details h1{
+  font-weight: bolder;
+  margin-left: 50px;
+}
+.dish_details img{
+  margin-left: 50px;
+  height: 250px;
+  width: 350px;
+}
+.dish_details p{
+  font-size: 1em;
+  text-align: justify;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.dish_details button , .plan_table button{
+  margin-left: 50px;
+  border-radius: 50px;
+  background:#d83f87;
+  border: 0;
+}
+.deliver{
+  font-size: 1.2em;
+  font-family: Raleway;
+  color: #a4b3b6;
+  border-radius: 0px;
+  width: 200px;
+  height: 50px;
+}
+.deliver:hover{
+box-shadow: 2px 2px 20px #222;
+}
+
+.dish_table
+{
+  order: 2;
+  flex: 1;
+  min-height: 90vh;
+  background: #2a1b3d;
+  position:relative;
+  color: #a4b3b6;
+}
+.plan_table{
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 150px;
+}
+th, tr, td, thead, tbody, .table{
+  border: 1px solid #2a1b3d;
+}
+.plan_table button{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.plan_table p{
+  position: absolute;
+  bottom: 50px;
+  right: 45px;
+}
+
+@media only screen and (max-width : 992px) {
+  .dish_view_sidebar{
+    min-height: 20vh;
+    padding-bottom: 120px
+  }
+  .dish_view_container{
+    flex-flow: column;
+  }
+  .details{
+    flex-flow: column
+  }
+  .dish_details{
+    min-height: 50vh
+  }
+  .dish_table{
+    min-height: 50vh
+  }
+}

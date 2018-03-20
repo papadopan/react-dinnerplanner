@@ -1,0 +1,76 @@
+.people{
+  text-align: center;
+  color: #a4b3b6
+}
+.dinner{
+  margin-left: 10px;
+  font-size: 1.2em;
+  font-family: Raleway;
+  position: relative;
+}
+.dinner h3{
+  text-align: center;
+  color: #a4b3b6
+}
+.add_minus{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  margin-top: 10px;
+}
+.stats{
+  margin-top: 40px;
+}
+
+.order_details , .ready_dish{
+  margin-top: 30px;
+  width: 100%;
+  background-color: lightgrey;
+  height: 50px;
+  border: 1px solid black;
+  position: relative;
+  font-size: 1.2em;
+}
+.order_details span , .order_dishes span{
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  font-family: Raleway;
+  font-size: .8em;
+
+}
+.order_details span:first-child , .order_dishes span:first-child{
+  position: absolute;
+  left: 5px;
+}
+.confirm{
+  color:#a4b3b6;
+  background:#d83f87;
+  border: 1px solid black;
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.order_dishes{
+  margin-top: 5px;
+  width: 95%;
+  background-color: lightgrey;
+  height: 50px;
+  margin-left: 15px;
+  border: 1px solid black;
+  position: relative;
+  font-size: .9em;
+}
+.price_list{
+  font-family: Raleway;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: 400;
+  position: absolute;
+  right: 30px;
+}

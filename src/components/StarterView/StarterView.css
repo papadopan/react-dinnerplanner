@@ -1,0 +1,39 @@
+.indexview{
+  display: flex;
+  min-height: 90vh;
+  background-image: url('../../assets/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.description {
+  margin: auto;
+  max-width: 50%;
+  text-align: center;
+}
+.description p {
+  margin-bottom: 100px;
+  font-size: 1.1em;
+  color: #fff;
+}
+#start_button{
+  color: #ffffff;
+  background-color: #d83f87;
+  border-radius: 20px;
+}
+.deliver{
+  font-size: 1.2em;
+  color: #a4b3b6;
+  border-radius: 0px;
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+  background: #f6b16b;
+}
+.deliver:hover{
+  box-shadow: 2px 2px 20px #222;
+}
+.AppBar{
+  text-align: center;
+  min-height: 10vh;
+}

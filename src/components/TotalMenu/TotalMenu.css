@@ -1,0 +1,119 @@
+.total_container{
+  display: flex;
+  flex-flow: column;
+  min-height: 90vh;
+  background-color: #8267a5;
+}
+.short_intro{
+  display: flex;
+  flex-flow: row;
+  background-color: #8267a5;
+}
+.short_info{
+  flex:1;
+  order: 1;
+  background: #8267a5;
+  min-height:15vh;
+  position: relative;
+  color :#a4b3b6;
+}
+.short_info p{
+  position: absolute;
+  left: 20px;
+  top: 6vh;
+  font-size: 1.5em;
+  font-weight: bolder;
+
+}
+.short_info button{
+  width: 250px;
+  position: absolute;
+  right: 10px;
+  top: 6vh;
+  background:#d83f87;
+  border-radius: 50px;
+  border: 0;
+}
+.total_dishes{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-bottom: 50px;
+  background-color: #8267a5;
+  position: relative;
+
+}
+.total_dishes > div {
+  background-color: #8267a5;
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+.total_dishes  img
+{
+  height: 100%;
+  width: 100%;
+}
+.vl{
+  border-left: 2px solid #2a1b3d;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.menu_items p {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  font-size: 0.7em;
+}
+.total{
+  position: relative;
+}
+.sum{
+  text-align: left;
+  position: absolute;
+  bottom: -50px;
+  font-size: 0.7em;
+}
+hr.style14 {
+
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #2a1b3d, #2a1b3d, #2a1b3d);
+  background-image: -moz-linear-gradient(left, #2a1b3d, #2a1b3d, #2a1b3d);
+  background-image: -ms-linear-gradient(left, #2a1b3d, #2a1b3d, #2a1b3d);
+  background-image: -o-linear-gradient(left, #2a1b3d, #2a1b3d, #2a1b3d);
+}
+.print{
+  display: flex;
+  margin-top: 100px;
+}
+.print button{
+  background:#d83f87;
+  margin: auto;
+  border-radius: 50px;
+  border: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (max-width : 992px) {
+.total_dishes{
+  flex-flow: column;
+}
+.total_dishes > div{
+  margin: auto;
+  margin-bottom: 50px;
+}
+.vl{
+  height: 0px;
+}
+.print button{
+
+}
+
+}

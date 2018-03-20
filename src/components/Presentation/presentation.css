@@ -1,0 +1,49 @@
+.plates_list{
+  display: flex;
+  flex-flow: row;
+}
+.plate_description{
+  flex: 1;
+  order: 1;
+  min-height: 50vh;
+  background-color: #8267a5;
+  color :#a4b3b6;
+}
+.plate_description img{
+  float: left;
+  height: 250px;
+  width:250px;
+  margin: 20px;
+  border: 4px solid #2a1b3d;
+  box-shadow: 0 4px 8px 0 #2a1b3d;
+}
+.plate_description h1 , .plate_prep h4{
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.plate_description p{
+  width: 80%;
+  margin-left: 10px;
+}
+.plate_prep{
+  flex:1;
+  order: 2;
+  min-height: 50vh;
+  background-color: #8267a5;
+  color :#a4b3b6;
+}
+.plate_prep p{
+  width: 60%;
+  margin-left: 10px;
+}
+@media only screen and (max-width : 992px) {
+.plates_list{
+  flex-flow: column
+}
+.plate_prep{
+  padding: 20px;
+}
+}
