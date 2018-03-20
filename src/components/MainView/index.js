@@ -21,7 +21,8 @@ class MainView extends Component{
       chosen: " ",
       title: "",
       mydata:[],
-      isLoaderOn: false
+      isLoaderOn: false,
+      error:false
     }
   }
 
@@ -76,9 +77,8 @@ fetchDishesByCategory(type, filter){
     mydata:data,
     isLoaderOn:false
   }))
-  .catch("There is a problem with the API")
+  .catch(()=> this.setState({error:true}))
 }
-
   render()
   {
     const style = {
@@ -89,7 +89,10 @@ fetchDishesByCategory(type, filter){
         color:'#2a1b3d',
           borderColor: '#2a1b3d'
     };
-    return(
+
+    if(!this.state.error)
+    {
+      return(
         <div>
         <AppBar
               title="Dinner Planner"
@@ -178,6 +181,17 @@ fetchDishesByCategory(type, filter){
           </div>
         </div>
     );
+
+    }
+    else{
+      return(
+          <div className="error_screen">
+            <p>Our restaurant can not serve you right now, please visit us another time</p>
+          </div>
+      );
+    }
+    
+ 
   }
 }
 

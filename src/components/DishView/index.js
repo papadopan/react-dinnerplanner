@@ -18,7 +18,8 @@ class DishView extends Component{
         price:1,
         ingredients: [ ],
         data:[],
-        isLoaderOn:true
+        isLoaderOn:true,
+        error:false
     };
   }
   componentDidMount()
@@ -52,13 +53,14 @@ class DishView extends Component{
                     ingredients:data.extendedIngredients,
                     isLoaderOn:false
               }) )
-      .catch("There is a problem with the API")
+      .catch(()=> this.setState({error:true}))
 
   }
   render()
   {
-    console.log(this.props.match.params.dishID)
-    return(
+    if(!this.state.error)
+    {
+      return(
         <div>
             <AppBar
                   title="Dinner Planner"
@@ -132,6 +134,17 @@ class DishView extends Component{
               </div>
         </div>
     );
+
+    }
+    else
+    {
+      return(
+        <div className="error_screen">
+          <p>Our restaurant can not serve you right now, please visit us another time</p>
+        </div>
+    );
+    }
+
   }
 
 }

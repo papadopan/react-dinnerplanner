@@ -36,7 +36,6 @@ updateminus = () =>
       marginRight: 50,
       margin:10,
     };
-    console.log('dishes', this.props.dishes)
     return(
       <div>
         <div className="dinner">

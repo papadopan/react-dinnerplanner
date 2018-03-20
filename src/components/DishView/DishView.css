@@ -86,6 +86,17 @@ th, tr, td, thead, tbody, .table{
   bottom: 50px;
   right: 45px;
 }
+.error_screen{
+  display: flex;
+  min-height: 100vh;
+  background: #2a1b3d
+}
+p{
+  margin: auto;
+  color: #8267a5;
+  font-size: 1.3em;
+}
+
 
 @media only screen and (max-width : 992px) {
   .dish_view_sidebar{

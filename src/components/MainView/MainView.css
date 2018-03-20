@@ -141,6 +141,16 @@ z-index: 100;
   flex: 1;
   order: 3;
 }
+.error_screen{
+  display: flex;
+  min-height: 100vh;
+  background: #2a1b3d
+}
+p{
+  margin: auto;
+  color: #8267a5;
+  font-size: 1.3em;
+}
 
 
 /******************************************************/
