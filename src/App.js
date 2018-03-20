@@ -24,7 +24,7 @@ class App extends Component {
     if(localStorage.getItem("GuestsNumber"))
     {
       this.setState({
-        guests: localStorage.getItem("GuestsNumber")
+        guests: parseInt(localStorage.getItem("GuestsNumber"))
       })
     }
     if(localStorage.getItem("dishes"))
@@ -36,7 +36,7 @@ class App extends Component {
     if(localStorage.getItem("price"))
     {
       this.setState({
-        total_price: localStorage.getItem("price")
+        total_price: parseInt(localStorage.getItem("price"))
       })
     }
   }
