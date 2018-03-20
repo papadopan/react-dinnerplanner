@@ -23,9 +23,9 @@ class TotalMenu extends Component{
             <div className="short_intro">
               <div className="short_info">
                 <p>My Dinner: {this.props.number} people</p>
-                <Link to="/mainview">
-                  <button type="button" name="button"className="deliver" id="go_back">Go back and edit dinner</button>
-                </Link>
+                <Link to="/presentation">
+              <button type="button" name="button" className="deliver" id="print_full_recipe">Print Full Recipe</button>
+              </Link>
               </div>
             </div>
             <div className="total_dishes">
@@ -48,12 +48,6 @@ class TotalMenu extends Component{
                   <p>{this.props.total * this.props.number} SEK</p>
                 </div>
               </div>
-            </div>
-            <hr className="style14"/>
-            <div className="print">
-            <Link to="/presentation">
-              <button type="button" name="button" className="deliver" id="print_full_recipe">Print Full Recipe</button>
-              </Link>
             </div>
         </div>
 
