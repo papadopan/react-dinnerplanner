@@ -59,15 +59,8 @@ class App extends Component {
     else{
       ids.push(dish.id)
       var dishes = this.state.selected_dishes.slice();
-      var total;
-      if (localStorage.getItem("price"))
-      {
-        total = localStorage.getItem("price")
-      }
-      else {
-        total = 0;
-      }
-        total = this.state.total_price + dish.price
+      var total = this.state.total_price + dish.price;
+
       localStorage.setItem("price" , total)
       dishes.push(dish)
       var d = JSON.stringify(dishes)
