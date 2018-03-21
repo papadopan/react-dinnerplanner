@@ -5,7 +5,7 @@ import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 import Sidebar from '../Sidebar'
-import {Link} from 'react-router-dom'
+import Dish from '../Dish'
 import  loader  from '../../assets/loader.gif'
 import './MainView.css'
 
@@ -43,9 +43,6 @@ TextFieldValue = (e) =>
   this.setState({
     TextFieldValue:e.target.value
   })
-}
-ClickRecipe = (e) =>{
-  this.props.dishId(e.target.id)
 }
 handleClick= () =>
 {
@@ -163,14 +160,11 @@ fetchDishesByCategory(type, filter){
                   {
                       this.state.mydata.map(recipe =>
                         {
-                          return      <div key={recipe.id}  className="button_pressed" onClick={this.ClickRecipe}>
-                                          <Link to={`dishview/dish/${recipe.id}`} >
-                                            <img src={recipe.image} alt="recipe icon" id={recipe.id}/>
-                                            <div className="brief">
-                                              {recipe.title}
-                                            </div>
-                                            </Link>
-                                          </div>
+                          return    <div key={recipe.id}>
+                                      <Dish 
+                                        recipe = {recipe} 
+                                        change={(param) => this.props.dishId(param)}/>
+                                    </div>
                         }
                       )
                   }

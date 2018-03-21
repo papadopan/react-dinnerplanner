@@ -81,7 +81,7 @@ class DishView extends Component{
                   updateGuests={(num)=>  this.props.updateNumberOfGuests(num)}
                   guests={this.props.number}
                   dishes={this.props.allDishes}
-                    total_price={this.props.total}
+                  total_price={this.props.total}
                   />
               </div>
 
