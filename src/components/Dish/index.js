@@ -8,7 +8,7 @@ class Dish extends Component{
     render()
     {
         return(
-                        <div key={this.props.recipe.id}  className="button_pressed" onClick={(e) => this.props.change(e.target.id)}>
+                        <div key={this.props.recipe.id}  className="dish_item" onClick={(e) => this.props.change(e.target.id)}>
                           <Link to={`dishview/dish/${this.props.recipe.id}`} >
                             <img src={this.props.recipe.image} alt="recipe icon" id={this.props.recipe.id}/>
                               <div className="brief">

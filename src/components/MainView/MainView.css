@@ -93,7 +93,7 @@ z-index: 100;
   display: none;
 }
 
-.dish_list > div {
+.dish_item {
   background-color: #f1f1f1;
   width: 220px;
   height: 220px;
@@ -104,7 +104,7 @@ z-index: 100;
   font-size: 30px;
   position: relative;
 }
-.dish_list img {
+.dish_item img {
   height: 100%;
   width: 100%;
 }

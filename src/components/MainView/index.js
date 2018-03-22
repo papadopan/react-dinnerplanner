@@ -160,7 +160,7 @@ fetchDishesByCategory(type, filter){
                   {
                       this.state.mydata.map(recipe =>
                         {
-                          return    <div key={recipe.id}>
+                          return    <div key={recipe.id} >
                                       <Dish 
                                         recipe = {recipe} 
                                         change={(param) => this.props.dishId(param)}/>
