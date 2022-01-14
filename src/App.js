@@ -15,7 +15,8 @@ class App extends Component {
         guests:1,
         selected_dishes:[],
         total_price: 0,
-        dishIDS:[]
+        dishIDS:[],
+        antonios:"fhjhfd"
     };
   }
 
